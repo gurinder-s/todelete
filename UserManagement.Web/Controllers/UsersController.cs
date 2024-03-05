@@ -101,8 +101,7 @@ public class UsersController : Controller
         return View(editUserViewModel);
     }
 
-    [HttpPost]
-    [ValidateAntiForgeryToken]
+    [HttpPost("{id}"), ValidateAntiForgeryToken]
     public async Task<IActionResult> Edit(int id, EditUserViewModel model)
     {
         if (id != model.Id)

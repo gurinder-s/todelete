@@ -1,0 +1,6 @@
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Web.Tests/bin/Debug/net7.0/CoverletSourceRootsMapping
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Web.Tests/obj/Debug/net7.0/UserManagement.Web.Tests.csproj.AssemblyReference.cache
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Web.Tests/obj/Debug/net7.0/UserManagement.Web.Tests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Web.Tests/obj/Debug/net7.0/UserManagement.Web.Tests.AssemblyInfoInputs.cache
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Web.Tests/obj/Debug/net7.0/UserManagement.Web.Tests.AssemblyInfo.cs
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Web.Tests/obj/Debug/net7.0/UserManagement.Web.Tests.csproj.CoreCompileInputs.cache
