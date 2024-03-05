@@ -44,7 +44,7 @@
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="btnToggleActions">
                                 <li> @Html.ActionLink("View", "UserDetailView", "Users", new { id = item.Id }, new { @class = "dropdown-item" })</li>
-                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li>@Html.ActionLink("Edit", "Edit", "Users", new { id = item.Id }, new { @class = "dropdown-item" })</li>
                                 <li><a class="dropdown-item" href="#">Delete</a></li>
                             </ul>
                         </div>

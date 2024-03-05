@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using UserManagement.Models;
+using UserManagement.Services.DataTransferObjects;
 using UserManagement.Services.Domain.Interfaces;
 using UserManagement.Web.Models.Users;
 
@@ -72,4 +73,63 @@ public class UsersController : Controller
 
     }
 
+    // GET: Users/Edit/5
+    [HttpGet("{id}")]
+    public async Task<IActionResult> Edit(int? id)
+    {
+        if (id == null)
+        {
+            return NotFound();
+        }
+
+        var userDetailDto = await _userService.GetUserById(id);
+        if (userDetailDto == null)
+        {
+            return NotFound();
+        }
+
+        var editUserViewModel = new EditUserViewModel
+        {
+            Id = userDetailDto.Id,
+            Forename = userDetailDto.Forename,
+            Surname = userDetailDto.Surname,
+            Email = userDetailDto.Email,
+            DateOfBirth = userDetailDto.DateOfBirth
+            // Map other fields as necessary
+        };
+
+        return View(editUserViewModel);
+    }
+
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<IActionResult> Edit(int id, EditUserViewModel model)
+    {
+        if (id != model.Id)
+        {
+            return NotFound();
+        }
+
+        if (ModelState.IsValid)
+        {
+            var userDetailDto = new UserDetailDTO
+            {
+                Id = model.Id,
+                Forename = model.Forename,
+                Surname = model.Surname,
+                Email = model.Email,
+                DateOfBirth = model.DateOfBirth
+
+            };
+
+            var result = await _userService.UpdateUserAsync(userDetailDto);
+            if (!result)
+            {
+                return NotFound(); 
+            }
+
+            return RedirectToAction(nameof(UserDetailView), new { id = model.Id });
+        }
+        return View(model);
+    }
 }

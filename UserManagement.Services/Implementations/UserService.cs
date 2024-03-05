@@ -44,4 +44,21 @@ public class UserService : IUserService
         };
         return viewModel;
     }
+
+    public async Task<bool> UpdateUserAsync(UserDetailDTO userDetailDto) {
+        var user = await _dataAccess.GetAll<User>().FirstOrDefaultAsync(u => u.Id == userDetailDto.Id);
+        if (user == null)
+        {
+            return false;
+        }
+
+        user.Forename = userDetailDto.Forename;
+        user.Surname = userDetailDto.Surname;
+        user.Email = userDetailDto.Email;
+        user.DateOfBirth = userDetailDto.DateOfBirth;
+
+        _dataAccess.Update(user);
+        return true;
+
+    }
 }

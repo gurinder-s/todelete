@@ -8,4 +8,7 @@
     <ProjectReference Include="..\UserManagement.Services\UserManagement.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="Views\Users\UserDetailView %28copy%29.cshtml" />
+  </ItemGroup>
 </Project>

@@ -14,4 +14,5 @@ public interface IUserService
     IEnumerable<User> FilterByActive(bool isActive);
     IEnumerable<User> GetAll();
     Task<UserDetailDTO?> GetUserById(int? Id);
+    Task<bool> UpdateUserAsync(UserDetailDTO userDetailDto);
 }
