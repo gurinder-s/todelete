@@ -1,0 +1,27 @@
+﻿@model UserManagement.Web.Models.Users.UserDetailViewModel
+@{
+    ViewData["Title"] = "User Details";
+}
+
+<h1>User Details</h1>
+
+<div>
+    <h4>Forename:</h4>
+    <p>@Model.Forename</p>
+</div>
+<div>
+    <h4>Surname:</h4>
+    <p>@Model.Surname</p>
+</div>
+<div>
+    <h4>ID:</h4>
+    <p>@Model.Id</p>
+</div>
+<div>
+    <h4>Date of Birth:</h4>
+    <p>@Model.DateOfBirth.ToShortDateString()</p>
+</div>
+<div>
+    <h4>Email:</h4>
+    <p>@Model.Email</p>
+</div>

@@ -1,0 +1,15 @@
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Services/bin/Debug/net7.0/UserManagement.Services.deps.json
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Services/bin/Debug/net7.0/UserManagement.Services.dll
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Services/bin/Debug/net7.0/UserManagement.Services.pdb
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Services/bin/Debug/net7.0/UserManagement.Data.dll
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Services/bin/Debug/net7.0/UserManagement.Data.pdb
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Services/obj/Debug/net7.0/UserManagement.Services.csproj.AssemblyReference.cache
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Services/obj/Debug/net7.0/UserManagement.Services.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Services/obj/Debug/net7.0/UserManagement.Services.AssemblyInfoInputs.cache
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Services/obj/Debug/net7.0/UserManagement.Services.AssemblyInfo.cs
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Services/obj/Debug/net7.0/UserManagement.Services.csproj.CoreCompileInputs.cache
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Services/obj/Debug/net7.0/UserManagement.Services.csproj.CopyComplete
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Services/obj/Debug/net7.0/UserManagement.Services.dll
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Services/obj/Debug/net7.0/refint/UserManagement.Services.dll
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Services/obj/Debug/net7.0/UserManagement.Services.pdb
+/Users/gurindersingh/Documents/VSCode/UserManagement_App/UserManagement.Services/obj/Debug/net7.0/ref/UserManagement.Services.dll
