@@ -48,8 +48,8 @@ public class UsersController : Controller
     }
 
     public object List() => throw new NotImplementedException();
-
-    public async Task<IActionResult> UserDetailViewAsync(int? id)
+    [HttpGet("UserDetailView/{id}")]
+    public async Task<IActionResult> UserDetailView(int? id)
     {
         var userDetailDto = await _userService.GetUserById(id);
         if (userDetailDto == null)
